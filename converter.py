@@ -23,7 +23,7 @@ def main():
             # Dependendo da operação que o usuário deseja realizar executa a respectiva função 
             
             if todo == "todecimal":
-                print(arg)
+                resultado = arg
             elif todo == "tobin":
                 resultado = dec_to_bin(arg)
             elif todo == "tohex":
@@ -36,7 +36,7 @@ def main():
             if todo == "todecimal":
                 resultado = bin_to_dec(arg)
             elif todo == "tobin":
-                print(arg)
+                resultado = arg
             elif todo == "tohex":
                 resultado = bin_to_hex(arg)
         
@@ -49,6 +49,6 @@ def main():
             elif todo == "tobin":
                 resultado = hex_to_bin(arg)
             elif todo == "tohex":
-                print(arg)
+                resultado = arg
     show_result(resultado)
 main()

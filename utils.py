@@ -79,6 +79,7 @@ def get_hex(dec):
 
 # Obter um decimal a partir de um hex de 0 a 15
 def get_dec(hex):
+    hex = hex.upper()
     if hex in "0 1 2 3 4 5 6 7 8 9":
         return hex
     dec_table = {
