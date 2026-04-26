@@ -93,11 +93,8 @@ def get_dec(hex):
 
 # Função para padronizar um binário em múltiplo de 4, adicionando zeros
 def standardize_bin(bin):
-    size = len(bin)
-
-    for _ in range(size % 4):
-        bin = "0" + bin
-
+    if len(bin) % 4 != 0:
+        bin = "0" * (4 - len(bin) % 4) + bin
     return bin
 
 # Quebra o binário em partes de 4
@@ -206,8 +203,10 @@ def get_arg(parser):
 
 # Mostrar o resultado na tela
 def show_result(resultado):
+    print()
     print("#"*25)
     print("#\tRESULTADO\t#")
     print("#"*25,end="\n\n")
 
     print("-> ", resultado)
+    print()
