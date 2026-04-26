@@ -31,20 +31,14 @@ O script aceita uma entrada (valor e tipo) e uma operação de destino.
 
 Siga estes passos para rodar o projeto localmente:
 
-<Steps>
-{/* Reason: A ordem é fundamental para garantir que o ambiente esteja pronto antes de tentar rodar o script. */}
-  <Step title="Clonar o repositório" subtitle="Obtenha os arquivos">
-    ```bash
-    git clone https://github.com/seu-usuario/bin-pyconverter.git
-    cd bin-pyconverter
-    ```
-  </Step>
-  <Step title="Executar o Script" subtitle="Teste inicial">
-    Rode o comando de ajuda para ver todas as opções disponíveis:
-    ```bash
-    python converter.py --help
-    ```
-  </Step>
-</Steps>
+1 Clone o repositório: <br>
+- git clone https://github.com/Caiky-Souza/BIN-Pyconverter.git
+
+2 Entre no repositório: <br>
+- cd bin-pyconverter
+  
+3 Rode o comando de ajuda para ver todas as opções disponíveis:<br>
+
+- python3 converter.py --help
 
 ---
